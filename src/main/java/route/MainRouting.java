@@ -4,6 +4,7 @@ import static spark.Spark.*;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 import models.QuestionsModel;
 import services.QuestionDataService;
@@ -17,7 +18,7 @@ public class MainRouting {
 
 	public static void main(String[] args) {
 
-		port(8080);
+		port(Integer.parseInt(Optional.ofNullable(System.getenv("PORT")).orElse("8080")));
 		staticFiles.location("/");
 
 		get("/", (req, res) -> {
