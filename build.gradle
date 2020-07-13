@@ -7,23 +7,18 @@
  */
 
 plugins {
+	id 'com.github.johnrengelman.shadow' version '5.0.0'
 	id 'java-library'
 	id 'application'
 	id 'war'
 	id 'org.gretty' version '3.0.3'
 }
 
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
 repositories {
 	jcenter()
-}
-
-jar {
-	manifest {
-		attributes(
-			'Main-Class': 'route.MainRouting'
-		)
-	from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-	}
 }
 
 dependencies {
@@ -52,10 +47,13 @@ dependencies {
    	compile 'com.google.code.gson:gson:2.8.5'
 }
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
-
-mainClassName = 'route.MainRouting'
+jar {
+	manifest {
+		attributes(
+			'Main-Class': 'route.MainRouting'
+		)
+	}
+}
 
 task stage {
 	dependsOn assemble
