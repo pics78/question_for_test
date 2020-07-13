@@ -17,6 +17,7 @@ public class MainRouting {
 
 	public static void main(String[] args) {
 
+		port(8080);
 		staticFiles.location("/");
 
 		get("/", (req, res) -> {
