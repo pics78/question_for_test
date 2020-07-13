@@ -1,0 +1,86 @@
+body {
+	background: #E6E6E6;
+	font-family: 'Quicksand', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* bootstrapクラス追加 */
+.mt-6 {
+	margin-top: 4.5rem !important;
+}
+
+/* bootstrap上書き */
+a {
+	color: black!important;
+	text-decoration: none!important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+	background-color: #f1f1f1;
+}
+
+/* -------------- */
+
+.main-green {
+	color: #33B300;
+}
+
+.visible-pc {
+	display: block;
+}
+
+.visible-sp {
+	display: none;
+}
+
+header {
+	background: #FAFAFA;
+	position: absolute;
+	padding-top: 25px;
+	border-bottom: 3px dotted #33B300;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+
+header.fixed {
+	position: fixed;
+	padding-top: 0;
+	opacity: 0.7;
+}
+
+header #mainTitle {
+	float: left;
+	margin-left: 50px;
+	letter-spacing: 0.5em;
+}
+
+footer {
+	clear: left;
+	height: 50px;
+	background: #FAFAFA;
+	border-top: 3px dotted #33B300;
+}
+
+footer #copyright {
+	text-align: center;
+	margin: 20px 0 5px 0;
+}
+
+@media screen and (max-width: 559px) {
+	header #mainTitle {
+		margin: 0 20px;
+	}
+
+	.visible-pc {
+		display: none;
+	}
+
+	.visible-sp {
+		display: block;
+	}
+}

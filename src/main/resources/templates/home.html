@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="common :: head(${title}, ~{::link})">
+	<link rel="stylesheet" href="/static/css/home.css" />
+</head>
+<body>
+	<div th:replace="common :: header"></div>
+	<div class="container mt-6 mb-4 overflow-hidden">
+		<div class="top-box">
+			<div class="row">
+				<div class="select-msg"><i class="fas fa-book fa-lg"></i>科目を選択</div>
+				<div class="col-xs-12 col-lg-4 target-subj" data-subject="biochemistry">生化学</div>
+				<div class="col-xs-12 col-lg-4 target-subj" data-subject="nutrition_education_theory">栄養指導論</div>
+				<div class="col-xs-12 col-lg-4 target-subj" data-subject="cooking_science">調理学</div>
+				<div class="col-xs-12 col-lg-4 target-subj" data-subject="basic_nutrition">基礎栄養学</div>
+				<div class="col-xs-12 col-lg-4 target-subj" data-subject="general_food_science">食品学総論</div>
+				<div class="col-xs-12 col-lg-4 target-subj" data-subject="feeding_plannig_theory">給食計画論</div>
+			</div>
+		</div>
+	</div>
+
+	<div th:replace="common :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+	"subjectName": "給食計画論",
+	"questionList": [
+		{
+			"referenceId": "fpt_ref1",
+			"reference" : "小テスト① 塩分濃度とかのやつ",
+			"questions": [
+				{
+					"id": 1,
+					"question": "人が健康を保持でき、美味しいと感じる塩分濃度は？",
+					"answer": "0.8%",
+					"explanation": ""
+				},
+				{
+					"id": 2,
+					"question": "汁の少ない献立なら（①）に対して塩分濃度を算出する。",
+					"answer": "主材料",
+					"explanation": ""
+				},
+				{
+					"id": 3,
+					"question": "汁の多い献立なら（①）に対して塩分濃度を算出する。",
+					"answer": "液体量",
+					"explanation": ""
+				},
+				{
+					"id": 4,
+					"question": "寒天を固めるのに適正な寒天濃度は（①）に対して（②）。",
+					"answer": "① 液体量<br>② 0.8 〜 1%",
+					"explanation": ""
+				},
+				{
+					"id": 5,
+					"question": "ゼラチンを２時間くらいで固めるのに適正なゼラチン濃度は（①）に対して（②）。",
+					"answer": "① 液体量<br>② 2.3%",
+					"explanation": ""
+				},
+				{
+					"id": 6,
+					"question": "かきたま汁のような汁物のとろみをつけるとき、片栗粉濃度は（①）に対して（②）。",
+					"answer": "① 液体量<br>② 1%",
+					"explanation": ""
+				},
+				{
+					"id": 7,
+					"question": "かに玉のあんかけのようなあんにとろみをつけるとき、片栗粉濃度は（①）に対して（②）。",
+					"answer": "① 液体量<br>② 4%",
+					"explanation": "抑制効果：ある種の味が他種の味によって抑えられる現象"
+				}
+			]
+		}
+	]
+}

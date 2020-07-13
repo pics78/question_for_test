@@ -1,0 +1,55 @@
+.top-box {
+	text-align: center;
+    background: white;
+	border-radius: 30px;
+	margin: 35px 0;
+	padding: 45px;
+}
+
+.top-box .row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.top-box .row .select-msg {
+	width: 70%;
+	margin: 0px auto;
+	margin-bottom: 40px;
+	border-bottom: solid 2px #4bce2a;
+}
+
+.top-box .row .select-msg i {
+	color: #ffa74e;
+	margin-right: 5px;
+}
+
+.top-box .row .target-subj {
+	cursor: pointer;
+	padding: 30px;
+	border: solid 1px #E6E6E6;
+	position: relative;
+}
+
+.top-box .row .target-subj:hover {
+	border: solid 1px #5ee229;
+	color: #33B300;
+}
+
+@media screen and (min-width: 600px) {
+	.top-box .row .target-subj::after {
+		position: absolute;
+		bottom: 28px;
+		left: 68px;
+		content: '';
+		width: 60%;
+		height: 2px;
+		background: #33B300;
+		transform: scale(0, 1);
+		transform-origin: center top;
+		transition: transform .3s;
+	}
+
+	.top-box .row .target-subj:hover::after {
+		transform: scale(1, 1);
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="common :: head(${title}, ~{::link})">
+	<link rel="stylesheet" href="/static/css/style.css" />
+	<link rel="stylesheet" href="/static/css/question.css" />
+</head>
+<body>
+	<div th:replace="common :: header"></div>
+	<div class="container mt-6 mb-4 overflow-hidden">
+		<div class="questions-box"
+			th:with="sn=${questionsModel.subjectName}, ql=${questionsModel.questionList}">
+			<div class="sn">
+				<i class="fas fa-book fa-lg"></i>
+				[[${sn}]]
+				<div class="dropdown ref-dropdown" th:if="!${#lists.isEmpty(ql)}">
+					<button type="button" id="ref-dropdown-btn"
+						class="btn dropdown-toggle btn-sm btn-ref-select"
+						style=""
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						<i class="fas fa-hashtag"></i>
+					</button>
+					<div class="dropdown-menu" aria-labelledby="ref-dropdown-btn">
+						<th:block th:each="qbr : ${ql}">
+							<a class="dropdown-item" th:href="|#${qbr.referenceId}|">[[${qbr.reference}]]</a>
+						</th:block>
+					</div>
+				</div>
+			</div>
+			<th:block th:if="${#lists.isEmpty(ql)}">
+				<div th:replace="common :: no-question-msg"></div>
+			</th:block>
+			<div class="qbr" th:each="qbr : ${ql}">
+				<div th:id="${qbr.referenceId}" class="qr"># [[${qbr.reference}]]</div>
+				<div class="question" th:each="q : ${qbr.questions}">
+					<div class="q-no">
+						<span>[[${q.id}]]</span>
+					</div>
+					<div class="qtext" th:utext="${q.question}"></div>
+					<div class="q-ans">
+						<div class="button-area">
+							<button class="btn q-ans-button"
+								data-toggle="collapse"
+								th:data-target="|#answer-${q.id}|"
+								aria-expand="false">解答
+							</button>
+						</div>
+						<div class="collapse" th:id="|answer-${q.id}|">
+ 							<div class="card card-body q-ans-card">
+ 								<div class="q-ans-text">
+ 									<div class="float-left mr-2 font-weight-bold">A.</div>
+ 									<div class="overflow-hidden" th:utext="${q.answer}"></div>
+	 							</div>
+ 								<th:block th:unless="${#strings.isEmpty(q.explanation)}">
+									<div class="q-ans-explanation" th:utext="${q.explanation}"></div>
+								</th:block>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:replace="common :: footer"></div>
+</body>
+</html>

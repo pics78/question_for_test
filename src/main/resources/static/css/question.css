@@ -1,0 +1,147 @@
+.questions-box {
+	padding: 45px;
+	margin: 35px 0;
+	background: white;
+	border-radius: 30px;
+}
+
+.questions-box .sn {
+	color: #2ab706;
+	text-align: center;
+	font-size: 28px;
+	letter-spacing: 0.5em;
+	border-bottom: solid 3px #4bce2a;
+	margin-bottom: 30px;
+}
+
+.questions-box .sn .ref-dropdown {
+	display: inline-block;
+	letter-spacing: normal;
+}
+
+.questions-box .sn .btn-ref-select {
+	color: #2ab706;
+	background-color: #fdfdfd;
+	border-color: #2ab706;
+	line-height: 1.0;
+}
+
+.questions-box .sn .btn-ref-select:hover {
+	border-color: #84ff65;
+}
+
+.questions-box .qbr {
+	border-bottom: dotted #a9a7a7;
+	padding-bottom: 15px;
+}
+
+.questions-box .qbr .qr {
+	text-align: center;
+	width: 80%;
+	margin: 35px auto;
+	padding: 5px 40px;
+	border: solid 2px #ffb939;
+	border-radius: 35px;
+	background: #ffb939;
+	color: white;
+	font-size: 18px;
+}
+
+.questions-box .qbr .question {
+	margin-bottom: 50px;
+}
+
+.questions-box .qbr .question .q-no {
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+	border: solid 2px #ffcb6b;
+	background: #ffcb6b;
+}
+
+.questions-box .qbr .question .qtext {
+	padding: 15px 60px 15px 30px;
+}
+
+.questions-box .qbr .question .q-ans {
+	margin: 5px 60px 5px 15px;
+}
+
+.questions-box .qbr .question .q-ans .q-ans-button {
+	margin-left: 10px;
+	border-radius: 0;
+	border-bottom: solid 2px #ff8c1a;
+	color: #ff8c1a;
+	font-weight: bold;
+}
+
+.questions-box .qbr .question .q-ans .q-ans-card {
+	border: 2px solid #ff8c1a;
+	top: -2px;
+}
+
+.questions-box .qbr .question .q-ans .q-ans-card .q-ans-text {
+	padding: 0 15px;
+}
+
+.questions-box .qbr .question .q-ans .q-ans-card .q-ans-explanation {
+	padding: 15px;
+	margin-top: 15px;
+	border-top: solid 1px #ff8c1a;
+}
+
+@media screen and (max-width: 559px) {
+	.questions-box {
+		padding: 45px 15px;
+	}
+
+	.questions-box .sn {
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+
+	.questions-box .qbr .qr {
+		width: 90%;
+		font-size: 14px;
+		padding: 5px 15px;
+	}
+
+	.questions-box .qbr .question .q-no {
+		font-size: 1.0em;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+	}
+
+	.questions-box .qbr .question .qtext {
+		font-size: 14px;
+		padding: 15px 10px 15px 10px;
+	}
+
+	.questions-box .qbr .question .q-ans {
+		margin: 5px 15px 5px 15px;
+	}
+
+	.questions-box .qbr .question .q-ans .button-area {
+		text-align: center;
+	}
+
+	.questions-box .qbr .question .q-ans .q-ans-button {
+		margin-left: 0;
+	}
+
+	.questions-box .qbr .question .q-ans .q-ans-card {
+		font-size: 14px;
+		padding: 0.8rem;
+	}
+
+	.questions-box .sn .ref-dropdown div {
+		font-size: 12px;
+		transform: translate3d(-185px, 26px, 0px);
+	}
+}
