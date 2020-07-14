@@ -21,6 +21,22 @@ $(function() {
 		return false;
 	});
 
+	let $pagetop = $('#page_top');
+	$pagetop.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$pagetop.fadeIn();
+		} else {
+			$pagetop.fadeOut();
+		}
+	});
+	$pagetop.on('click', function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 300);
+		return false;
+	});
+
 	$('.target-subj').on('click', function () {
 		let selectedSubject = $(this).data().subject;
 		window.location = '/question?subject=' + selectedSubject;
