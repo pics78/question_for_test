@@ -255,47 +255,47 @@
 					"id": 16,
 					"question": "【◯ × 問題】<br>解糖によりグルコースからグリコーゲンが生成される。",
 					"answer": "×",
-					"explanation": ""
+					"explanation": ">解糖によりグルコースからピルビン酸が生成される。"
 				},
 				{
 					"id": 17,
 					"question": "【◯ × 問題】<br>解糖系はミトコンドリアでグルコースを嫌気的に分解する。",
 					"answer": "×",
-					"explanation": ""
+					"explanation": "解糖系は細胞質基質に存在する。"
 				},
 				{
 					"id": 18,
 					"question": "【◯ × 問題】<br>解糖系では1分子のグルコースから2分子のATPができる。",
 					"answer": "◯",
-					"explanation": ""
+					"explanation": "生成 4分子 - 消費 2分子"
 				},
 				{
 					"id": 19,
 					"question": "【◯ × 問題】<br>デンプンはグルコースとフルクトースが多数結合した多糖類である。",
 					"answer": "×",
-					"explanation": ""
+					"explanation": "グルコースが多数結合。"
 				},
 				{
 					"id": 20,
 					"question": "【◯ × 問題】<br>クエン酸回路は好気的状態でも嫌気的状態でも同様に進む。",
 					"answer": "×",
-					"explanation": ""
+					"explanation": "嫌気的状態ではアセチルCoAが供給されないため進まなくなる。"
 				},
 				{
 					"id": 21,
 					"question": "【◯ × 問題】<br>解糖系で生じたピルビン酸は嫌気的条件下でアセチルCoAになる。",
 					"answer": "×",
-					"explanation": ""
+					"explanation": "嫌気的条件下ではピルビン酸は乳酸になる。"
 				},
 				{
 					"id": 22,
 					"question": "【◯ × 問題】<br>クエン酸回路では基質レベルのリン酸化によりGTPが生成される。",
 					"answer": "◯",
-					"explanation": ""
+					"explanation": "スクシニルCoA->コハク酸の反応時にGTPが生成する。"
 				},
 				{
 					"id": 23,
-					"question": "【◯ × 問題】<br>五炭糖リン酸回路で生じたNADPHとHイオンは主に電子伝達系に移り、ATPを生成する。",
+					"question": "【◯ × 問題】<br>五炭糖リン酸回路で生じたNADPHとH<sup>+</sup>は主に電子伝達系に移り、ATPを生成する。",
 					"answer": "×",
 					"explanation": ""
 				},
@@ -309,7 +309,7 @@
 					"id": 25,
 					"question": "【◯ × 問題】<br>筋肉細胞で生成した乳酸は筋肉細胞内でグルコースに再生される。",
 					"answer":"×",
-					"explanation": ""
+					"explanation": "筋肉細胞で生成した乳酸は血液を通って肝臓に運ばれ、肝臓でグルコースに再合成され、再び血液を経由して各組織に運ばれる。"
 				}
 			]
 		}
