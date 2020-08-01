@@ -38,26 +38,28 @@
 						<span>[[${q.id}]]</span>
 					</div>
 					<div class="qtext" th:utext="${q.question}"></div>
-					<div class="q-ans">
-						<div class="button-area">
-							<button class="btn q-ans-button"
-								data-toggle="collapse"
-								th:data-target="|#answer-${ri}-${q.id}|"
-								aria-expand="false">解答
-							</button>
-						</div>
-						<div class="collapse" th:id="|answer-${ri}-${q.id}|">
- 							<div class="card card-body q-ans-card">
- 								<div class="q-ans-text">
- 									<div class="float-left mr-2 font-weight-bold">A.</div>
- 									<div class="overflow-hidden" th:utext="${q.answer}"></div>
-	 							</div>
- 								<th:block th:unless="${#strings.isEmpty(q.explanation)}">
-									<div class="q-ans-explanation" th:utext="${q.explanation}"></div>
-								</th:block>
+					<th:block th:unless="${#strings.isEmpty(q.answer)}">
+						<div class="q-ans">
+							<div class="button-area">
+								<button class="btn q-ans-button"
+									data-toggle="collapse"
+									th:data-target="|#answer-${ri}-${q.id}|"
+									aria-expand="false">解答
+								</button>
+							</div>
+							<div class="collapse" th:id="|answer-${ri}-${q.id}|">
+	 							<div class="card card-body q-ans-card">
+	 								<div class="q-ans-text">
+	 									<div class="float-left mr-2 font-weight-bold">A.</div>
+	 									<div class="overflow-hidden" th:utext="${q.answer}"></div>
+		 							</div>
+	 								<th:block th:unless="${#strings.isEmpty(q.explanation)}">
+										<div class="q-ans-explanation" th:utext="${q.explanation}"></div>
+									</th:block>
+								</div>
 							</div>
 						</div>
-					</div>
+					</th:block>
 				</div>
 			</div>
 			<div class="mt-4">
