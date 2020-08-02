@@ -42,5 +42,8 @@ $(function() {
 		window.location = '/question?subject=' + selectedSubject;
 	});
 
+	$('#open-all-ans').on('click', function () {
+		$('.q-ans .q-ans-button').click();
+	});
 
 });

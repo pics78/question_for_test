@@ -5,6 +5,15 @@
 	border-radius: 30px;
 }
 
+.questions-box #open-all-ans {
+	margin: 0 auto;
+	width: fit-content;
+	border: solid 1px;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+
 .questions-box .sn {
 	color: #2ab706;
 	text-align: center;
