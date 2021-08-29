@@ -10,11 +10,7 @@
 
 # Gradle
 .gradle
-!gradle-wrapper.jar
 
 # Build
 build
 bin
-
-# Local
-local_run.sh

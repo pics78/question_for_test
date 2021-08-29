@@ -1,9 +1,7 @@
 package services;
 
 import java.io.FileInputStream;
-
 import com.google.gson.Gson;
-
 import models.QuestionsModel;
 
 public class QuestionDataService {
