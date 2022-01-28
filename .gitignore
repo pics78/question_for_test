@@ -7,6 +7,9 @@
 .classpath
 .settings
 
+# vscode
+.vscode
+
 # Gradle
 .gradle
 
